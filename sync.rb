@@ -29,17 +29,17 @@ remote_password = '___INSERT_YOUR_PASSWORD___'
 # Tasks                                                                      #
 ##############################################################################
 tasks = [{
-  :source => 'Informatik/Fachbereich/Betriebssystemkonzepte/BsKon',
-  :target => 'BsKon/Skriptserver'
+  :source => 'Informatik/Fachbereich/Betriebssystemkonzepte/BsKon/',
+  :target => 'BsKon/Skriptserver/'
 },{
-  :source => 'Informatik/Fachbereich/Datenbanksysteme_2/Dbs2',
-  :target => 'Dbs2/Skriptserver'
+  :source => 'Informatik/Fachbereich/Datenbanksysteme_2/Dbs2/',
+  :target => 'Dbs2/Skriptserver/'
 },{
-  :source => 'Informatik/Fachbereich/Software-Engineering_3/SE3',
-  :target => 'SE3/Skriptserver'
+  :source => 'Informatik/Fachbereich/Software-Engineering_3/SE3/',
+  :target => 'SE3/Skriptserver/'
 },{
-  :source => 'Informatik/Fachbereich/Verteilte_SW-Systeme/Vss',
-  :target => 'Vss/Skriptserver'
+  :source => 'Informatik/Fachbereich/Verteilte_SW-Systeme/Vss/',
+  :target => 'Vss/Skriptserver/'
 }]
 
 ##############################################################################
