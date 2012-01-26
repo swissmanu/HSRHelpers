@@ -4,7 +4,7 @@
 # Fill in your local settings, your HSR account credentials, create some tasks
 # and you're ready to go :-)
 # Your contribution is appiciated.
-# Requries rsync and mount_smbfs. Tested on Mac OS X 10.7.2 with Ruby 1.9.2
+# Requries rsync and mount_smbfs. Tested on Mac OS X 10.7.2 with Ruby 1.9.3dev
 #
 # Author::  Manuel Alabor (mailto:malabor@hsr.ch)
 
