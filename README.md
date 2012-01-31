@@ -1,6 +1,17 @@
 # HSRHelpers
 Some Ruby scripts which might be helpful for HSR students :-)
 
+## Installation
+At the moment, you have to build the gemspec by yourself:
+
+	gem build hsrhelpers.gemspec
+	
+This will build most commonly a file like `hsrhelpers-1.0.0.gem`. Install this file with:
+
+	gem install hsrhelpers-1.0.0.gem
+	
+Afterwards, you can call the HSRHelpers by invoking `hsrhelpers` on your commandline.
+
 ## Sync
 Create a job file:
 
