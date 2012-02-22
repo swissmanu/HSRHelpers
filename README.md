@@ -6,9 +6,9 @@ At the moment, you have to build the gemspec by yourself:
 
 	gem build hsrhelpers.gemspec
 	
-This will build most commonly a file like `hsrhelpers-1.0.0.gem`. Install this file with:
+This will build most commonly a file like `hsrhelpers-X.Y.Z.gem`. Install this file with:
 
-	gem install hsrhelpers-1.0.0.gem
+	gem install hsrhelpers-X.Y.Z.gem
 	
 Afterwards, you can call the HSRHelpers by invoking `hsrhelpers` on your commandline.
 
