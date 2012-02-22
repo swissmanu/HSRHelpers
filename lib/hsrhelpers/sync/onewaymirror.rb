@@ -58,7 +58,9 @@ module HsrHelpers
     
       def prepare_path(path, base_path)
         path = File.join(base_path.to_s, path) if !base_path.nil?
-        path = path.gsub(":", File.join(HsrHelpers::Base.temp_dir.path, 'mounts'))
+        
+        mounts = File.join(HsrHelpers::Base.temp_dir.path, 'mounts', '')
+        path = path.gsub(":", mounts)
       end
     
     end
