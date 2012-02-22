@@ -49,6 +49,7 @@ module HsrHelpers
           Logger.message " - Target: #{prepared_target}"
 
           create_dir_if_missing(prepared_target)
+          
           `rsync --archive -u -v #{exclude_filter} "#{prepared_source}" "#{prepared_target}"`
         end
       end
@@ -57,7 +58,7 @@ module HsrHelpers
     
       def prepare_path(path, base_path)
         path = path.prepend(base_path.to_s) if !base_path.nil?
-        path = path.gsub(":", "mounts/")
+        path = path.gsub(":", File.join(HsrHelpers::Base.temp_dir.path, 'mounts'))
       end
     
     end

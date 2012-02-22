@@ -11,9 +11,10 @@ module HsrHelpers
       end
     
       def perform!
+        mount_point = File.join(HsrHelpers::Base.temp_dir.path, 'mounts', @name)
+
         Logger.message "Unmount \"#{@name}\""
-        `umount "mounts/#{@name}"`
-        delete_dir "mounts/#{@name}"
+        `umount "#{mount_point}"`
       end
     
     end

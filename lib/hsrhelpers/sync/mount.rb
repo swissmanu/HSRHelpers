@@ -24,10 +24,11 @@ module HsrHelpers
     
       def perform!
         if(@type == :smb)
-          Logger.message "Mount SMB share under \"mounts/#{@name}\""
+          mount_point = File.join(HsrHelpers::Base.temp_dir.path, 'mounts', @name)
           
-          create_dir_if_missing "mounts/#{@name}"
-          `mount_smbfs #{@path} "mounts/#{@name}"`
+          Logger.message "Mount SMB share under \"#{@name}\""
+          create_dir_if_missing "#{mount_point}"
+          `mount_smbfs #{@path} "#{mount_point}"`
         else
           Logger.error 'Only SMB file systems are mountable at the moment!'
         end
