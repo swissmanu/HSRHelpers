@@ -50,7 +50,7 @@ module HsrHelpers
 
           create_dir_if_missing(prepared_target)
           
-          `rsync --archive -u -v #{exclude_filter} "#{prepared_source}" "#{prepared_target}"`
+          `rsync --archive -u -v --delete #{exclude_filter} "#{prepared_source}" "#{prepared_target}"`
         end
       end
     

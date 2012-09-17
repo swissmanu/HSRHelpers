@@ -3,7 +3,7 @@
 module HsrHelpers
   class Version
 
-    MAJOR, MINOR, PATCH = 1, 0, 3
+    MAJOR, MINOR, PATCH = 1, 0, 4
 
     def self.major
       MAJOR
